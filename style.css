@@ -1,0 +1,250 @@
+:root{
+    --purple: #38396c;
+    --light-purple: #d8d8f8;
+    --title-color: #ece5e5;
+    --font-color: #6364a3;
+    
+}
+
+* {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    text-emphasis: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background: #f2eded;
+    display: flex;
+    flex-flow: row;
+    scroll-behavior: smooth
+    ;
+}
+
+nav{
+    /* flex: 1; */
+    width: 8%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--light-purple);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+nav-links {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 65%;
+}
+
+nav-link{
+    width: 60%;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+nav-link a{
+    font-size: 1rem;
+    text-align: center;
+}
+
+nav-link a:hover{
+    color: black;
+}
+
+section{
+    flex: 1;
+    width: 92%;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    padding-left: 7.5rem;
+}
+
+.container{ 
+    display: flex;
+    flex-flow: column;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.title-2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.highlight{
+    color: var(--font-color);
+}
+
+.section{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.text{
+    width: 60%;
+}
+
+.desc{
+    width: 90%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.btn-cv{
+    font-size: 1rem;
+    background-color: var(--font-color);
+    color: white;
+    /* margin-top: 5rem; */
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    border: transparent;
+    position: relative;
+    top: 1rem;
+}
+
+.btn-cv:hover{
+    color: var(--font-color);
+    background-color: white;
+    border: solid 0.1rem var(--font-color);
+}
+
+.image{
+    width: 30%;
+    border: solid #dbdbf8 .75rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    overflow: contain;
+}
+
+.abt-1 {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.abt-1-left{
+    flex: 1;
+    padding-right: 1rem;
+    border-right: .3rem solid var(--purple);
+}
+
+.abt-links{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: var(--purple);
+}
+
+.abt-links a{
+    color: var(--purple);
+}
+.abt-links a:hover{
+    color: var(--font-color);
+}
+
+.abt-1-right{
+    flex: 1;
+    padding-left: 1rem;
+}
+
+.skill-container{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.skill{
+    border: .2rem solid var(--purple);
+    border-radius: 1.5rem;
+    padding: .5rem 1rem .5rem 1rem;
+    margin: .5rem;
+}
+
+.abt-2{
+    margin-top: 1.5rem;
+}
+
+ul{
+    padding-inline-start: 0rem;
+    border-left: var(--font-color) solid 0.2rem;
+}
+li{
+    list-style: none;
+}
+
+.project-container{
+    background-color: white;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+    padding-left: 0.75rem;
+    border: solid var(--title-color) 0.01rem;
+    border-radius: 1.5rem;
+    box-shadow: #515050 0.1rem 0.1rem 0.5rem;
+    margin-top: 0.5rem;
+
+}
+
+.exp-container{
+    background-color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    border: solid var(--title-color) 0.01rem;
+    border-radius: 1.5rem;
+    box-shadow: #515050 0.1rem 0.1rem 0.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-flow: column;
+}
+
+.exp-title{
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.exp-container ul{
+    margin-block-start: 0em;
+    margin-block-end: 0.3rem;
+}
+
+.duration{
+    font-size: 0.8rem;
+    color: var(--font-color);
+    font-weight: 600;
+    margin-top: 0.3rem;
+    padding-right: 0.75rem;
+    align-self: flex-end;
+}
+
+.contact{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
